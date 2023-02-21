@@ -15,4 +15,10 @@ export default class HospitalEmployee {
   takeVacationDays(daysOff) {
     this._remainingVacationDays = this._remainingVacationDays - daysOff;
   }
+
+  // static method
+  static generatePassword() {
+    const randomPassword = Math.floor(Math.random() * 100000);
+    return randomPassword;
+  }
 }
